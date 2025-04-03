@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Pomodoro</title>
+</head>
+
+<body>
+    <h1>Vamos manter o foco!</h1>
+    <div class="timer-img">
+        <img src="https://i.pinimg.com/736x/81/75/b9/8175b9cfa8318dcd3d7f4c4ad2180260.jpg">
+        <div class="timer">
+        <label for="duration">Selecione o tempo de foco:</label>
+        <select name="duration" id="duration" class="duration">
+            <option id="option" value="30min">30 minutos</option>
+            <option id="option" value="1hour">1 hora</option>
+            <option id="option" value="1h30">1 hora e 30 minutos</option>
+        </select>
+        <button id="start">Começar</button>
+    </div>
+    </div>
+
+    <div class="selected-time">
+        <p id="selected-time-value"></p>
+    </div>
+
+    <div class="pomodoro">
+        <p id="pomodoro-time"></p>
+    </div>
+
+    <div class="controls">
+        <button id="stop">Parar timer</button>
+        <button id="restart">Reiniciar timer</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
